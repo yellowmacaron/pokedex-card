@@ -48,7 +48,7 @@ const fetchPokeData = (name) => {
     });
 };
 let pokeInformation = (data) => {
-  pokeID.textContent = "ID: " + data["id"];
+  pokeID.textContent = "#" + data["id"].toString().padStart(3, "0");
   pokehp.textContent = "HP: " + data["stats"][0]["base_stat"];
   pokeName.textContent = capitalize(data.name);
   // get the img
