@@ -79,16 +79,6 @@ let pokeInformation = (data) => {
   const themeColor = typeColor[dataFirstType.type.name];
   styleCard(themeColor);
 
-  // shinyBtn.addEventListener("click", () => {
-  //   fetchPokeData(
-  //     (pokeImg.src = data["sprites"]["other"]["home"]["front_shiny"])
-  //   );
-  // });
-  // normalBtn.addEventListener("click", () => {
-  //   fetchPokeData(
-  //     (pokeImg.src = data["sprites"]["other"]["home"]["front_default"])
-  //   );
-  // });
   pokeImg.addEventListener("mouseover", () => {
     fetchPokeData(
       (pokeImg.src = data["sprites"]["other"]["home"]["front_shiny"])
