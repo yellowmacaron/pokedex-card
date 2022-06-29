@@ -35,8 +35,6 @@ const pokeHeight = document.querySelector(".poke-height");
 const statAttack = document.querySelector(".stat-attack");
 const statDefend = document.querySelector(".stat-defend");
 const statSpeech = document.querySelector(".stat-speech");
-const shinyBtn = document.querySelector(".shiny-btn");
-const normalBtn = document.querySelector(".normal-btn");
 
 //function
 const capitalize = (str) => str[0].toUpperCase() + str.substr(1);
@@ -124,9 +122,9 @@ searchBtn.addEventListener("click", () => getPokeID(searchTerm.value));
 
 let styleCard = (themeColor) => {
   card.style.background = `radial-gradient(circle farthest-side, #fff,${themeColor})`;
+  generateBtn.style.background = `${themeColor}`;
+  searchBtn.style.background = `${themeColor}`;
 };
-//radial-gradient(circle farthest-side, #56ab2f, #a8e063)
-//linear-gradient(180deg, ${themeColor} 0%, #fff 100%)
 
 //Execute a function when the user presses a key on the keyboard
 searchTerm.addEventListener("keypress", function (event) {

@@ -98,18 +98,17 @@ img {
 }
 .btn {
   padding: 10px 50px;
-  margin-top: 2rem;
+  margin-top: 10px;
+  margin-bottom: 25px;
   font-size: 18px;
-  background-color: #101010;
-  color: #ffffff;
-  border: none;
+  border-color: #fff;
+  color: #000;
+  background-color: #fff;
   border-radius: 5px;
-  transition .2s transform ease-in-out
+  transition: all 0.4s ease 0s;
 }
 .btn:hover {
-  background-color: rgb(235, 229, 229);
-  color: #000;
-  font-weight: 500;
+  box-shadow: 5px 2px rgb(204, 199, 199);
 }
 .search {
   display: flex;
@@ -117,6 +116,7 @@ img {
   align-items: center;
   margin: 1.2rem 0.7rem;
 }
+
 .search-bar {
   width: 300px;
   padding: 10px;
@@ -145,102 +145,20 @@ img {
   font-weight: 800;
   border-radius: 5px;
 }
-/*pokemon icon */
-.poke-icon {
+.button {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.4s ease 0s;
+  border-color: #fff;
 }
-.icon {
-  padding: 5px;
-  border-radius: 50% 50%;
-  margin-right: 5px;
+.button p {
+  padding-top: 1px;
 }
-.bug {
-  background: #92bc2c;
-  box-shadow: 0 0 20px #92bc2c;
+.header {
+  text-align: center;
 }
-
-.dark {
-  background: #595761;
-  box-shadow: 0 0 20px #595761;
-}
-
-.dragon {
-  background: #0c69c8;
-  box-shadow: 0 0 20px #0c69c8;
-}
-
-.electric {
-  background: #f2d94e;
-  box-shadow: 0 0 20px #f2d94e;
-}
-
-.fire {
-  background: #fba54c;
-  box-shadow: 0 0 20px #fba54c;
-}
-
-.fairy {
-  background: #ee90e6;
-  box-shadow: 0 0 20px #ee90e6;
-}
-
-.fighting {
-  background: #d3425f;
-  box-shadow: 0 0 20px #d3425f;
-}
-
-.flying {
-  background: #a1bbec;
-  box-shadow: 0 0 20px #a1bbec;
-}
-
-.ghost {
-  background: #5f6dbc;
-  box-shadow: 0 0 20px #5f6dbc;
-}
-
-.grass {
-  background: #5fbd58;
-  box-shadow: 0 0 20px #5fbd58;
-}
-
-.ground {
-  background: #da7c4d;
-  box-shadow: 0 0 20px #da7c4d;
-}
-
-.ice {
-  background: #75d0c1;
-  box-shadow: 0 0 20px #75d0c1;
-}
-
-.normal {
-  background: #a0a29f;
-  box-shadow: 0 0 20px #a0a29f;
-}
-
-.poison {
-  background: #b763cf;
-  box-shadow: 0 0 20px #b763cf;
-}
-
-.psychic {
-  background: #fa8581;
-  box-shadow: 0 0 20px #fa8581;
-}
-
-.rock {
-  background: #c9bb8a;
-  box-shadow: 0 0 20px #c9bb8a;
-}
-
-.steel {
-  background: #5695a3;
-  box-shadow: 0 0 20px #5695a3;
-}
-
-.water {
-  background: #539ddf;
-  box-shadow: 0 0 20px #539ddf;
+.header p {
+  padding: 10px;
 }
