@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Pokemon Draw Card</title>
+  </head>
+  <body>
+    <div class="center">
+      <h1 class="pokedex">PokeDex</h1>
+      <p>Want to know more about a pokemon?</p>
+      <!-- card-->
+      <div class="container">
+        <div id="card">
+          <div class="top-container">
+            <p class="pokemonID">ID: 50</p>
+            <span class="hp">HP 32</span>
+          </div>
+          <div class="pokemonImg">
+            <img src="./149.svg" class="poke-IMG" />
+          </div>
+          <div class="card-background">
+            <h2 class="poke-name">Sample-name</h2>
+            <div class="attributes-container">
+              <div class="attributes-content">
+                <p class="cp-text poke-type" id="">Electric / Fire</p>
+                <p class="text-muted">Type</p>
+              </div>
+              <div class="col attributes-content">
+                <p class="cp-text poke-weight" id="">5.58kg</p>
+                <p class="text-muted">Weight</p>
+              </div>
+              <div class="col attributes-content">
+                <p class="cp-text no-border poke-height" id="">0.82m</p>
+                <p class="text-muted">Height</p>
+              </div>
+            </div>
+            <div class="line"></div>
+            <!-- Pokemon Stats-->
+            <div class="stats">
+              <div class="stat">
+                <p class="stat-attack">60</p>
+                <p class="text-muted">Attack</p>
+              </div>
+              <div class="stat">
+                <p class="stat-defend">60</p>
+                <p class="text-muted">Defend</p>
+              </div>
+              <div class="stat">
+                <p class="stat-speech">60</p>
+                <p class="text-muted">Speech</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- End of pokemon stats-->
+      </div>
+    </div>
+    <button class="btn">Generate</button>
+    <!-- search bar-->
+    <div class="search">
+      <input
+        type="text"
+        class="search-bar"
+        placeholder="Search Pokemon name or pokemon ID"
+      />
+      <button class="search-btn">
+        <svg
+          stroke="currentColor"
+          fill="currentColor"
+          stroke-width="0"
+          viewBox="0 0 16 16"
+          height="1.5em"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
+            clip-rule="evenodd"
+          ></path>
+          <path
+            fill-rule="evenodd"
+            d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+    </div>
+    <!-- end of search bar-->
+    <script src="./script.js"></script>
+  </body>
+</html>
