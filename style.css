@@ -162,3 +162,9 @@ img {
 .header p {
   padding: 10px;
 }
+.error {
+  text-align: center;
+}
+.hide {
+  display: none;
+}

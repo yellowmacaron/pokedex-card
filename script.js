@@ -34,7 +34,7 @@ const pokeWeight = document.querySelector(".poke-weight");
 const pokeHeight = document.querySelector(".poke-height");
 const statAttack = document.querySelector(".stat-attack");
 const statDefend = document.querySelector(".stat-defend");
-const statSpeech = document.querySelector(".stat-speech");
+const statSpeed = document.querySelector(".stat-speed");
 
 //function
 const capitalize = (str) => str[0].toUpperCase() + str.substr(1);
@@ -43,10 +43,9 @@ const capitalize = (str) => str[0].toUpperCase() + str.substr(1);
 const fetchPokeData = (name) => {
   fetch("https://pokeapi.co/api/v2/pokemon/" + name)
     .then((response) => response.json())
-    .then((data) => {
-      pokeInformation(data);
-    });
+    .then((data) => pokeInformation(data));
 };
+
 let pokeInformation = (data) => {
   pokeID.textContent = "#" + data["id"].toString().padStart(3, "0");
   pokehp.textContent = "HP: " + data["stats"][0]["base_stat"];
@@ -56,7 +55,7 @@ let pokeInformation = (data) => {
   //get the attack
   statAttack.innerText = data["stats"][1]["base_stat"];
   statDefend.innerText = data["stats"][2]["base_stat"];
-  statSpeech.textContent = data["stats"][5]["base_stat"];
+  statSpeed.textContent = data["stats"][5]["base_stat"];
 
   pokeWeight.textContent = (data["weight"] * 0.1).toFixed(1) + " kg";
   pokeHeight.textContent = (data["height"] * 0.1).toFixed(1) + " m";
@@ -79,6 +78,7 @@ let pokeInformation = (data) => {
   const themeColor = typeColor[dataFirstType.type.name];
   styleCard(themeColor);
 
+  //pokemon shiny img
   pokeImg.addEventListener("mouseover", () => {
     fetchPokeData(
       (pokeImg.src = data["sprites"]["other"]["home"]["front_shiny"])
